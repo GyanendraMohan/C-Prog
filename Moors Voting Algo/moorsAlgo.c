@@ -22,7 +22,7 @@ int moorsVoting(int arr[], int size) {
     int candidate = arr[0]; // initialize the candidate element
     printf("%d", arr[0]); // print the first element of the array
 
-    for (int i = 1; i < size; i++) {
+    for (int i = 1; i <= size; i++) {
         if (arr[i] == candidate) {
             count++; // increment the count if the candidate element is found
         } else {
