@@ -33,6 +33,12 @@ int straightBS(int arr[], int low, int high, int x, int *count) {
                 right++;  // Move to the next index
             }
             *count = temp_count;  // Store the total count in the count parameter
+
+            // Find the first occurrence
+            while (mid > low && arr[mid - 1] == x) {
+                mid--;
+            }
+
             return mid;  // Return the index of the found element
         }
     }
