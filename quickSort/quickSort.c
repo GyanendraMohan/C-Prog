@@ -50,6 +50,15 @@ Returns: Nothing.
 */
 void quicksort(int arr[], int low, int high) {
     // If the low index is less than the high index, continue
+    /*The condition low < high in the quicksort function is used to 
+    determine if the current partition of the array has 
+    elements that still need to be sorted. If the low index is less 
+    than the high index, it means there are still elements in the 
+    partition to be sorted. In this case, the function continues by 
+    finding the pivot position, and then recursively sorts the elements 
+    before and after the pivot. If the low index is not less than the 
+    high index, it means all elements in the partition have been sorted, 
+    and the function returns without doing anything.*/
     if(low < high) {
         // Find the pivot position
         int pos = partition(arr, low, high);
