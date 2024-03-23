@@ -1,3 +1,5 @@
+//median of median algo
+
 #include <stdio.h>
 #include <stdlib.h>
 
